@@ -36,7 +36,7 @@ export class DefinitionCreationPageComponent {
 
   createArticle() {
     if (!isValidForm(this.articleFields)) {
-      return this.http.post('http://erin-zealous-cougar.cyclic.app/articles', this.articleFields).subscribe(response => {
+      return this.http.post('https://erin-zealous-cougar.cyclic.app/articles', this.articleFields).subscribe(response => {
         console.log(response);
       });
     }
