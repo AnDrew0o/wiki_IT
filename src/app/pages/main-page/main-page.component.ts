@@ -36,7 +36,7 @@ export class MainPageComponent {
   }
 
   setArticles() {
-    this.http.get('http://localhost:3000/articles').subscribe((response) => {
+    this.http.get('http://erin-zealous-cougar.cyclic.app/articles').subscribe((response) => {
       this.dataSource.data = Object.entries((response as Array<Article>).reduce((acc, item) => {
         return {
           ...acc,
